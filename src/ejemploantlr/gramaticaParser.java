@@ -234,7 +234,7 @@ public class gramaticaParser extends Parser {
 				setState(25);
 				((AContext)_localctx).aeO = a(((AContext)_localctx).bO.bO.getResult()+her,node,false,true);
 
-				        ((AContext)_localctx).masO.m.getPaso().setRegla("A::= + B A1 ");
+				        ((AContext)_localctx).masO.m.getPaso().setRegla("A::= + B A1");
 				        A aO=new A();
 				        aO.setResult(((AContext)_localctx).aeO.aO.getResult());
 				        aO.setPaso(paso);

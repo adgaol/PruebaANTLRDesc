@@ -15,7 +15,7 @@ exp  returns [Exp expO]
         Node node=writer.addNode("EXP", false,false);
         
     } 
-    
+
     bO=b[node,true]  aO=a[((ExpContext)_localctx).bO.bO.getResult(),node,true,false] puntocoma[node,false] {
         ((ExpContext)_localctx).bO.bO.getPaso().setRegla("EXP::= B A ;");
         Exp expO=new Exp();
@@ -42,7 +42,7 @@ a [Integer her,Node nodeAnt,Boolean haveBrother,Boolean a1] returns [A aO]
         
         }
         masO=mas[node,true] bO=b[node,true]  aeO=a[((AContext)_localctx).bO.bO.getResult()+her,node,false,true] {
-        ((AContext)_localctx).masO.m.getPaso().setRegla("A::= + B A1 ");
+        ((AContext)_localctx).masO.m.getPaso().setRegla("A::= + B A1");
         A aO=new A();
         aO.setResult(((AContext)_localctx).aeO.aO.getResult());
         aO.setPaso(paso);

@@ -14,7 +14,7 @@ import apicreatorxml.Paso;
  */
 public class Mas {
     private Integer id;
-    private Integer nivel;
+    
     private Paso paso;
     private Node node;
     public Mas() {
@@ -28,13 +28,7 @@ public class Mas {
         this.id = id;
     }
 
-    public Integer getNivel() {
-        return nivel;
-    }
-
-    public void setNivel(Integer nivel) {
-        this.nivel = nivel;
-    }
+   
 
     public Paso getPaso() {
         return paso;

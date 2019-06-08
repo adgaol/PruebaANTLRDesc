@@ -14,7 +14,7 @@ import apicreatorxml.Paso;
  */
 public class PuntoComa {
     private Integer id;
-    private Integer nivel;
+    
     private Paso paso;
     private Node node;
     public PuntoComa() {
@@ -29,13 +29,7 @@ public class PuntoComa {
         this.id = id;
     }
 
-    public Integer getNivel() {
-        return nivel;
-    }
-
-    public void setNivel(Integer nivel) {
-        this.nivel = nivel;
-    }
+   
 
     public Paso getPaso() {
         return paso;

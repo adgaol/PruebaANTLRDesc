@@ -13,23 +13,16 @@ import apicreatorxml.Paso;
  * @author adgao
  */
 public class A {
-    private Integer value;
+
     private Integer result;
     private Integer id;
-    private Integer nivel;
+    
     private Paso paso;
     private Node node;
     public A() {
     }
 
-    public Integer getValue() {
-        return value;
-    }
     
-
-    public void setValue(Integer value) {
-        this.value = value;
-    }
 
     public Integer getId() {
         return id;
@@ -39,13 +32,7 @@ public class A {
         this.id = id;
     }
 
-    public Integer getNivel() {
-        return nivel;
-    }
-
-    public void setNivel(Integer nivel) {
-        this.nivel = nivel;
-    }
+    
 
     public Paso getPaso() {
         return paso;
