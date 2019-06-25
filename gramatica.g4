@@ -72,7 +72,8 @@ a [Integer her,Node nodeAnt,Boolean haveBrother,Boolean a1] returns [A aO]
         A aO=new A();
         aO.setResult(her);
         aO.setPaso(paso);
-        Node nodeAux=node;
+        writer.updatesValues(pasoL,nodeL, aO.getResult().toString());
+        /*Node nodeAux=node;
         while(!nodeAux.getHaveBrother()){
 
             pasoL.getChangedNodes().add(nodeAux.getId());
@@ -88,7 +89,7 @@ a [Integer her,Node nodeAnt,Boolean haveBrother,Boolean a1] returns [A aO]
             String values=pasoAux.getValor();
             
             values=values.replace("null",aO.getResult().toString() );
-            pasoL.getChanges().add(values); 
+            pasoL.getChanges().add(values); */
             _localctx.aO=aO;
         
         }
@@ -150,7 +151,8 @@ c [Integer her,Node nodeAnt,Boolean haveBrother,Boolean c1]   returns [C cO]
 
         cO.setResult(her);
         cO.setPaso(paso);
-        Node nodeAux=node;
+        writer.updatesValues(paso,nodeL, cO.getResult().toString());
+        /*Node nodeAux=node;
         while(!nodeAux.getHaveBrother()){
 
             paso.getChangedNodes().add(nodeAux.getId());
@@ -168,7 +170,7 @@ c [Integer her,Node nodeAnt,Boolean haveBrother,Boolean c1]   returns [C cO]
             
             
             values=values.replace("null",cO.getResult().toString() );
-            paso.getChanges().add(values); 
+            paso.getChanges().add(values); */
         
         _localctx.cO=cO;}
 

@@ -232,7 +232,7 @@ public class gramaticaParser extends Parser {
 				setState(25);
 				((AContext)_localctx).aeO = a(((AContext)_localctx).bO.bO.getResult()+her,node,false,true);
 
-				        ((AContext)_localctx).masO.m.getPaso().setRegla("A::= + B A1 ");
+				        ((AContext)_localctx).masO.m.getPaso().setRegla("A::= + B A1");
 				        A aO=new A();
 				        aO.setResult(((AContext)_localctx).aeO.aO.getResult());
 				        aO.setPaso(paso);
@@ -266,7 +266,8 @@ public class gramaticaParser extends Parser {
 				        A aO=new A();
 				        aO.setResult(her);
 				        aO.setPaso(paso);
-				        Node nodeAux=node;
+				        writer.updatesValues(pasoL,nodeL, aO.getResult().toString());
+				        /*Node nodeAux=node;
 				        while(!nodeAux.getHaveBrother()){
 
 				            pasoL.getChangedNodes().add(nodeAux.getId());
@@ -282,7 +283,7 @@ public class gramaticaParser extends Parser {
 				            String values=pasoAux.getValor();
 				            
 				            values=values.replace("null",aO.getResult().toString() );
-				            pasoL.getChanges().add(values); 
+				            pasoL.getChanges().add(values); */
 				            _localctx.aO=aO;
 				        
 				        
@@ -468,7 +469,8 @@ public class gramaticaParser extends Parser {
 
 				        cO.setResult(her);
 				        cO.setPaso(paso);
-				        Node nodeAux=node;
+				        writer.updatesValues(paso,nodeL, cO.getResult().toString());
+				        /*Node nodeAux=node;
 				        while(!nodeAux.getHaveBrother()){
 
 				            paso.getChangedNodes().add(nodeAux.getId());
@@ -486,7 +488,7 @@ public class gramaticaParser extends Parser {
 				            
 				            
 				            values=values.replace("null",cO.getResult().toString() );
-				            paso.getChanges().add(values); 
+				            paso.getChanges().add(values); */
 				        
 				        _localctx.cO=cO;
 				}
