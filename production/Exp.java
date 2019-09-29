@@ -1,5 +1,3 @@
-package ejemploantlr;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,14 +10,14 @@ import vistdsapixmlcreator.Paso;
  *
  * @author Adrian Garcia Oller
  */
-public class C {
+public class Exp {
 
     private String value;
     private Integer id;
     
     private Paso paso;
     private Node node;
-    public C() {
+    public Exp() {
     }
 
     

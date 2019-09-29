@@ -1,20 +1,20 @@
+package ejemploantlr;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejemploantlr;
-
-import apicreatorxml.Node;
-import apicreatorxml.Paso;
+import vistdsapixmlcreator.Node;
+import vistdsapixmlcreator.Paso;
 
 /**
  *
- * @author adgao
+ * @author Adrian Garcia Oller
  */
 public class A {
 
-    private Integer result;
+    private String value;
     private Integer id;
     
     private Paso paso;
@@ -50,12 +50,12 @@ public class A {
         this.node = node;
     }
 
-    public Integer getResult() {
-        return result;
+    public String getValue() {
+        return value;
     }
 
-    public void setResult(Integer result) {
-        this.result = result;
+    public void setValue(String value) {
+        this.value = value;
     }
     
 }

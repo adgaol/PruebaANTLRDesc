@@ -1,8 +1,8 @@
-// Generated from gramatica.g4 by ANTLR 4.7.2
+// Generated from .//production/gramatica.g4 by ANTLR 4.7.2
 
-    import apicreatorxml.Writer;
-    import apicreatorxml.Node;
-    import apicreatorxml.Paso;
+    import vistdsapixmlcreator.Writer;
+    import vistdsapixmlcreator.Node;
+    import vistdsapixmlcreator.Paso;
 
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
@@ -52,25 +52,15 @@ public interface gramaticaListener extends ParseTreeListener {
 	 */
 	void exitC(gramaticaParser.CContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link gramaticaParser#puntocoma}.
+	 * Enter a parse tree produced by {@link gramaticaParser#number}.
 	 * @param ctx the parse tree
 	 */
-	void enterPuntocoma(gramaticaParser.PuntocomaContext ctx);
+	void enterNumber(gramaticaParser.NumberContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link gramaticaParser#puntocoma}.
+	 * Exit a parse tree produced by {@link gramaticaParser#number}.
 	 * @param ctx the parse tree
 	 */
-	void exitPuntocoma(gramaticaParser.PuntocomaContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link gramaticaParser#mas}.
-	 * @param ctx the parse tree
-	 */
-	void enterMas(gramaticaParser.MasContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link gramaticaParser#mas}.
-	 * @param ctx the parse tree
-	 */
-	void exitMas(gramaticaParser.MasContext ctx);
+	void exitNumber(gramaticaParser.NumberContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link gramaticaParser#por}.
 	 * @param ctx the parse tree
@@ -82,13 +72,23 @@ public interface gramaticaListener extends ParseTreeListener {
 	 */
 	void exitPor(gramaticaParser.PorContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link gramaticaParser#numb}.
+	 * Enter a parse tree produced by {@link gramaticaParser#mas}.
 	 * @param ctx the parse tree
 	 */
-	void enterNumb(gramaticaParser.NumbContext ctx);
+	void enterMas(gramaticaParser.MasContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link gramaticaParser#numb}.
+	 * Exit a parse tree produced by {@link gramaticaParser#mas}.
 	 * @param ctx the parse tree
 	 */
-	void exitNumb(gramaticaParser.NumbContext ctx);
+	void exitMas(gramaticaParser.MasContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link gramaticaParser#puntoComa}.
+	 * @param ctx the parse tree
+	 */
+	void enterPuntoComa(gramaticaParser.PuntoComaContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link gramaticaParser#puntoComa}.
+	 * @param ctx the parse tree
+	 */
+	void exitPuntoComa(gramaticaParser.PuntoComaContext ctx);
 }

@@ -1,6 +1,4 @@
-package ejemploantlr;
-
-// Generated from ./ANTLR/production/gramatica.g4 by ANTLR 4.7.2
+// Generated from .//production/gramatica.g4 by ANTLR 4.7.2
 
     import vistdsapixmlcreator.Writer;
     import vistdsapixmlcreator.Node;
@@ -92,7 +90,7 @@ public class gramaticaParser extends Parser {
 	public ATN getATN() { return _ATN; }
 
 
-	    Writer writer = new Writer("gramatica.g4","./gramaticaXML",EjemploANTLR.getChain(),true);
+	    Writer writer = new Writer("gramatica.g4","./gramaticaXML","GRAMATICAramatic.getChain()",true);
 
 	public gramaticaParser(TokenStream input) {
 		super(input);
@@ -135,7 +133,7 @@ public class gramaticaParser extends Parser {
 			{
 
 			        Exp expO=new Exp();
-			        Node node=writer.addPasoNoTerminal("EXP",  null,  null,  expO,  "null", null, false);
+			        Node node=writer.addPasoNoTerminal("EXP",  null,  null,  expO,  null, null, false);
 			    
 			setState(17);
 			((ExpContext)_localctx).bO = b(node, true);
@@ -209,8 +207,7 @@ public class gramaticaParser extends Parser {
 				{
 				 
 				        A aO=new A();
-				        Node node=writer.addPasoNoTerminal("A",  "valor",  "result",  aO,  her, nodeAnt, haveBrother);
-				    /*que la api apunte sola haveBrother, el toString del valor que lo haga la funcion*/
+				        Node node=writer.addPasoNoTerminal("A",  "valor",  "result",  aO,  her.toString(), nodeAnt, haveBrother);
 				    
 				setState(23);
 				((AContext)_localctx).masO = mas(node, true);
@@ -229,7 +226,7 @@ public class gramaticaParser extends Parser {
 				{
 
 				        A aO=new A();     
-				        writer.addPasoLambda("A",  "valor",  "result",  her,  "{A.result=A.valor;}",  aO, nodeAnt, haveBrother);
+				        writer.addPasoLambda("A",  "valor",  "result",  her.toString(),  "{A.result=A.valor;}",  aO, nodeAnt, haveBrother);
 				        _localctx.aO=aO;
 				    
 				}
@@ -286,7 +283,7 @@ public class gramaticaParser extends Parser {
 			{
 
 			        B bO=new B();
-			        Node node=writer.addPasoNoTerminal("B",  null,  "result",  bO,  "null", nodeAnt, haveBrother);
+			        Node node=writer.addPasoNoTerminal("B",  null,  "result",  bO,  null, nodeAnt, haveBrother);
 			    
 			setState(32);
 			((BContext)_localctx).numO = number(node, true);
@@ -356,7 +353,7 @@ public class gramaticaParser extends Parser {
 				{
 
 				        C cO=new C();
-				        Node node=writer.addPasoNoTerminal("C",  "valor",  "result",  cO,  her, nodeAnt, haveBrother);
+				        Node node=writer.addPasoNoTerminal("C",  "valor",  "result",  cO,  her.toString(), nodeAnt, haveBrother);
 				    
 				setState(37);
 				((CContext)_localctx).porO = por(node, true);
@@ -375,7 +372,7 @@ public class gramaticaParser extends Parser {
 				{
 
 				        C cO=new C();    
-				        writer.addPasoLambda("C",  "valor",  "result",  her,  "{C.result=C.valor;}",  cO, nodeAnt, haveBrother);
+				        writer.addPasoLambda("C",  "valor",  "result",  her.toString(),  "{C.result=C.valor;}",  cO, nodeAnt, haveBrother);
 				        _localctx.cO=cO;
 				    
 				}

@@ -1,10 +1,10 @@
 package ejemploantlr;
 
-// Generated from gramatica.g4 by ANTLR 4.7.2
+// Generated from ./ANTLR/production/gramatica.g4 by ANTLR 4.7.2
 
-    import apicreatorxml.Writer;
-    import apicreatorxml.Node;
-    import apicreatorxml.Paso;
+    import vistdsapixmlcreator.Writer;
+    import vistdsapixmlcreator.Node;
+    import vistdsapixmlcreator.Paso;
 
 
 import org.antlr.v4.runtime.ParserRuleContext;
@@ -70,25 +70,13 @@ public class gramaticaBaseListener implements gramaticaListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPuntocoma(gramaticaParser.PuntocomaContext ctx) { }
+	@Override public void enterNumber(gramaticaParser.NumberContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPuntocoma(gramaticaParser.PuntocomaContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterMas(gramaticaParser.MasContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitMas(gramaticaParser.MasContext ctx) { }
+	@Override public void exitNumber(gramaticaParser.NumberContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -106,13 +94,25 @@ public class gramaticaBaseListener implements gramaticaListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterNumb(gramaticaParser.NumbContext ctx) { }
+	@Override public void enterMas(gramaticaParser.MasContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitNumb(gramaticaParser.NumbContext ctx) { }
+	@Override public void exitMas(gramaticaParser.MasContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPuntoComa(gramaticaParser.PuntoComaContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPuntoComa(gramaticaParser.PuntoComaContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

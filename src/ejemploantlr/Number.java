@@ -12,14 +12,14 @@ import vistdsapixmlcreator.Paso;
  *
  * @author Adrian Garcia Oller
  */
-public class C {
+public class Number {
 
     private String value;
     private Integer id;
     
     private Paso paso;
     private Node node;
-    public C() {
+    public Number() {
     }
 
     
